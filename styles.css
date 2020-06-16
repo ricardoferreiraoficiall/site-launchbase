@@ -1,1 +1,35 @@
 /* styles.css */
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #282a36;
+    font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding: 32px;
+    background: rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #333333;
+}
+
+header div.links {
+    text-align: center;
+}
+
+header div.links a {
+    margin: 0 16px;
+    font-size: 18px;
+    color: #FFFFFF;
+    line-height: 28px;
+    text-decoration: none;
+}
+
+header div.links a:hover {
+    color: #50fA7B;
+    transition: color 400ms;
+}

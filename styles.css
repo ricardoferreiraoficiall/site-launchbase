@@ -1,6 +1,11 @@
 /* styles.css */
 
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap");
+
+:root {
+    --color-green: #50fA7B;
+}
+
 * {
     border: 0;
     margin: 0;
@@ -9,6 +14,7 @@
 }
 
 body {
+    color: #FFFFFF;
     background: #282a36;
     font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
 }
@@ -23,7 +29,8 @@ header div.links {
     text-align: center;
 }
 
-header div.links a {
+header div.links a,
+#wrapper div.social-media a {
     margin: 0 16px;
     font-size: 18px;
     color: #FFFFFF;
@@ -31,17 +38,52 @@ header div.links a {
     text-decoration: none;
 }
 
-header div.links a:hover {
-    color: #50fA7B;
+header div.links a:hover,
+#wrapper div.social-media a:hover {
+    color: var(--color-green);
     transition: color 400ms;
 }
 
 #wrapper {
-
+    padding: 32px;
+    text-align: center;
 }
 
 #wrapper img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
+    margin-bottom: 32px;
+    border: 5px solid var(--color-green)
+}
+
+#wrapper h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 42px;
+}
+
+#wrapper h3 {
+    /* color: #FFFFFF; */
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 28px;
+    margin-bottom: 25px;
+    opacity: 0.5;
+}
+
+#wrapper p {
+    margin: 0 auto;
+    max-width: 500px;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+#wrapper div.social-media {
+    margin-top: 25px;
+}
+
+#wrapper div.social-media a {
+    font-size: 14px;
+    border-bottom: 1px solid var(--color-green);
 }

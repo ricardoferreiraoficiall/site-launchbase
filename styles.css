@@ -99,6 +99,7 @@ section.cards {
 }
 
 section.cards .card {
+    cursor: pointer;
     background-color: #7159C1;
 }
 
